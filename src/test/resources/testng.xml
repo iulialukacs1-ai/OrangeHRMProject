@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Full Test Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="API Tests">
+        <packages>
+            <package name="APITests"/>
+        </packages>
+    </test>
+
+    <test name="UI Tests">
+        <packages>
+            <package name="UITests"/>
+        </packages>
+    </test>
+
+</suite>
