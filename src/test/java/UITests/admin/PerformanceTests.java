@@ -37,6 +37,8 @@ public class PerformanceTests extends BaseTest {
         performancePage.openAddKPIPage();
         performancePage.selectJobTitle();
         performancePage.enterKPIName("Automation");
+        performancePage.enterMinRating("1");
+        performancePage.enterMaxRating("5");
         performancePage.saveKPI();
 
         Assert.assertTrue(performancePage.isKpiSaved(), "KPI was not saved!");

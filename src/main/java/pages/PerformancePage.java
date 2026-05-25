@@ -26,6 +26,12 @@ public class PerformancePage extends BasePage {
     @FindBy(xpath = "//div[@role='listbox']//span[text()='QA Engineer']")
     private WebElement jobTitleOption;
 
+    @FindBy(xpath = "(//input[contains(@class,'oxd-input oxd-input--active')])[2]")
+    private WebElement minRatingInput;
+
+    @FindBy(xpath = "(//input[contains(@class,'oxd-input oxd-input--active')])[3]")
+    private WebElement maxRatingInput;
+
     public void openAddKPIPage() {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/performance/saveKpi");
         waitUtils.waitForURL("/performance/saveKpi");
@@ -38,6 +44,16 @@ public class PerformancePage extends BasePage {
     public void selectJobTitle() {
         jobTitleDropdown.click();
         jobTitleOption.click();
+    }
+
+    public void enterMinRating(String min) {
+        minRatingInput.clear();
+        minRatingInput.sendKeys(min);
+    }
+
+    public void enterMaxRating(String max) {
+        maxRatingInput.clear();
+        maxRatingInput.sendKeys(max);
     }
     public void saveKPI() {
         saveButton.click();

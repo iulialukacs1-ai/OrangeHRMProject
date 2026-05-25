@@ -53,5 +53,30 @@ public class EmployeeTests extends BaseTest {
                 "Angajatul nu a fost salvat - nu suntem pe pagina angajatului!");
         System.out.println("Add Employee Test passed!");
     }
+
+    //================== Test - Bug: Special Characters in Name ================//
+//1. Deschide pagina si se logheaza
+//2. Navigheaza la PIM > Add Employee
+//3. Completeaza campurile cu caractere speciale
+//4. Click Save
+//5. Verifica ca aplicatia accepta caracterele speciale - BUG documentat
+
+    @Test
+    @Description("BUG: Campurile First Name si Last Name accepta caractere speciale")
+    @Severity(SeverityLevel.MINOR)
+    public void testSpecialCharactersInEmployeeName() {
+        login();
+        navigationPage.openMenu("PIM");
+        employeePage.clickAddEmployee();
+        employeePage.addEmployee("@@@@@@@", "!!!!!!!");
+        employeePage.clickSave();
+
+        // BUG: Aplicatia salveaza angajatul cu caractere speciale
+        // Rezultat actual: angajatul este salvat cu succes
+        // Rezultat asteptat: mesaj de eroare - caractere speciale nu sunt permise
+        Assert.assertFalse(employeePage.getCurrentUrl().contains("viewPersonalDetails"),
+                "BUG-001: Aplicatia accepta caractere speciale in campurile de nume!");
+        System.out.println("BUG-001 confirmed: Special characters accepted in employee name fields!");
+    }
 }
 
