@@ -75,8 +75,8 @@ public class EmployeeTests extends BaseTest {
         // Rezultat actual: angajatul este salvat cu succes
         // Rezultat asteptat: mesaj de eroare - caractere speciale nu sunt permise
         Assert.assertFalse(employeePage.getCurrentUrl().contains("viewPersonalDetails"),
-                "BUG-001: Aplicatia accepta caractere speciale in campurile de nume!");
-        System.out.println("BUG-001 confirmed: Special characters accepted in employee name fields!");
+                "BUG-001: Aplicatia accepta caractere speciale in campurile de nume");
+        System.out.println("BUG-001 confirmed: Special characters accepted in employee name fields");
     }
 }
 
