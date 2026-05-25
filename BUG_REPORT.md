@@ -50,7 +50,3 @@ Un angajat poate fi inregistrat in sistem cu un nume invalid,
 ceea ce poate cauza probleme in rapoarte si exporturi de date.
 
 ---
-
-## Dovezi
-
-![Bug Screenshot](screenshots/Screenshot_2026-05-24_at_13_23_42.png)

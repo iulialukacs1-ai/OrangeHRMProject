@@ -58,11 +58,10 @@ Pentru raport Allure:
 
 - GET users — verificare lista utilizatori
 - GET user single — verificare date utilizator specific
-- GET user inexistent — verificare raspuns 404
 - POST user — creare utilizator nou si verificare date returnate
 - DELETE user — stergere utilizator si verificare status code
-- Response time — verificare timp de raspuns sub 3 secunde
-
+- Create User prin POST - creeare de utilizator nou
+- Register User prin POST - inregistrare user
 ---
 
 ## Structura proiectului

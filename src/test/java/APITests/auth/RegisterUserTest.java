@@ -40,7 +40,8 @@ public class RegisterUserTest extends BaseAPI {
                 .when()
                 .post(TestConfig.BASE_URL + "/api/register")
                 .then()
-                .statusCode(200).body("id", notNullValue())
+                .statusCode(200)
+                .body("id", notNullValue())
                 .body("token", notNullValue());
     }
 }
