@@ -26,7 +26,7 @@ public class PerformanceTests extends BaseTest {
     //4. Deschide dropdownul de Job title si selecteaza QA Engineer.
     //5. Localizeaza campul de Key performance Indicator si completeaza campul cu "Automation".
     //6. Localizeaza butonul de Save si da click.
-    //7. Verifica daca success toast message e displayede, si implicit daca KPI a fost salvat cu succes.
+    //7. Verifica daca success toast message e displayed, si implicit daca KPI a fost salvat cu succes.
 
     @Test
     @Description("Verifica faptul ca un KPI nou poate fi adaugat selectand un job title, completand numele KPI si salvand formularul")

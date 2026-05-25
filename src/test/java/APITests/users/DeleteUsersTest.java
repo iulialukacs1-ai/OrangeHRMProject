@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class DeleteUsersTest extends BaseAPI {
 
-    //============== Test 6 ===========//
+    //============== Test 6 Sterge user ===========//
     //1. Trimițe DELETE catre /api/users2.
     //2. Verifica status 204.
     //3. Verifica ca raspunsul nu contine body.

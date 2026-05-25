@@ -47,8 +47,6 @@ public class EmployeeTests extends BaseTest {
         );
         employeePage.clickSave();
 
-        System.out.println("URL dupa save: " + employeePage.getCurrentUrl());
-
         Assert.assertTrue(employeePage.getCurrentUrl().contains("viewPersonalDetails"),
                 "Angajatul nu a fost salvat - nu suntem pe pagina angajatului!");
         System.out.println("Add Employee Test passed!");

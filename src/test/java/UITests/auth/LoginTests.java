@@ -58,7 +58,7 @@ public class LoginTests extends BaseTest {
 
     //===================== Test3 - Login invalid ====================//
     //1. Deschide pagina.
-    //2. Completeaza campurile de username si password cdu date invalide.
+    //2. Completeaza campurile de username si password cu date invalide.
     //3. Da click pe butonul de login.
     //4. Verifica mesajul de eroare.
 

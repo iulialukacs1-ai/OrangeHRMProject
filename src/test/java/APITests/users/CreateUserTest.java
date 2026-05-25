@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.notNullValue;
 
 public class CreateUserTest extends BaseAPI {
 
-    //================== Test 3 =================//
+    //================== Test 3 Creeaza user =================//
     //1. Creaza payload-ul JSON cu nume și job.
     //2. Trimițe POST catre /api/users.
     //3. Verifica status 201.

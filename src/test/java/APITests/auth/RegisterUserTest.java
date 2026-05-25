@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.notNullValue;
 
 public class RegisterUserTest extends BaseAPI {
 
-    //================ Test 4 ====================//
+    //================ Test 4 Inregistreaza user ====================//
     //1. Pregatește payload-ul JSON cu email si parola.
     //2. Trimițe un request POST catre /api/register.
     //3. Trimițe header-ul x-api-key cu cheia generata.

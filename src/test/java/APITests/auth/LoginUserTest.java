@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.notNullValue;
 
 public class LoginUserTest extends BaseAPI {
 
-    //================= Test 5 =================//
+    //================= Test 5  Login valid =================//
     //1. Pregateste payload-ul JSON cu email si parola valide.
     //2. Trimițe un request POST catre /api/login.
     //3. Trimițe header-ul x-api-key cu cheia generata.
@@ -45,7 +45,7 @@ public class LoginUserTest extends BaseAPI {
 
     }
 
-    //================ Test 6 ==================//
+    //================ Test 6 Login fara parola ==================//
     //1. Pregatește payload-ul JSON fara parola.
     //2. Trimițe un request POST catre /api/login.
     //3. Trimițe header-ul x-api-key cu cheia generata.
