@@ -29,8 +29,8 @@ public class DriverFactory {
                         driver = new ChromeDriver();
                 }
                 driver.manage().window().maximize();
-                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
+                driver.manage().timeouts().implicitlyWait(
+                        Duration.ofSeconds(ConfigReader.getInt("waitTimeout")));
             }
             return driver;
         }
